@@ -154,9 +154,10 @@ public class SimpleModuleScript : MonoBehaviour
 
 	void press(KMSelectable pressedButton)
 	{
-		audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
 		int buttonPosition = Array.IndexOf(buttons, pressedButton);
 
+		audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, buttons[buttonPosition].transform);
+		buttons [buttonPosition].AddInteractionPunch ();
 		if (_isSolved == false)
 		{
 			switch (buttonPosition) 
@@ -241,32 +242,38 @@ public class SimpleModuleScript : MonoBehaviour
 
 		if (command == "press 1") 
 		{
-			buttons [0].OnInteract();
 			yield return null;
+			buttons [0].OnInteract();
 			yield break;
 		}
 		if (command == "press 2") 
 		{
-			buttons [1].OnInteract();
 			yield return null;
+			buttons [1].OnInteract();
 			yield break;
 		}
 		if (command == "press 3") 
 		{
-			buttons [2].OnInteract();
 			yield return null;
+			buttons [2].OnInteract();
 			yield break;
 		}
 		if (command == "press 4") 
 		{
-			buttons [3].OnInteract();
 			yield return null;
+			buttons [3].OnInteract();
 			yield break;
 		}
 		if (command == "press 5") 
 		{
-			buttons [4].OnInteract();
 			yield return null;
+			buttons [4].OnInteract();
+			yield break;
+		}
+		if (command == "press 6") 
+		{
+			yield return null;
+			buttons [5].OnInteract();
 			yield break;
 		}
 	}
