@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Activities — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>       
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Activities</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Activities.svg" class="diagram">
+                <h2>On the Subject of Activities</h2>
+                <p class="flavour-text">Since when did your habits determine your age?</p>
+                
+                <p>This module consists of three screens showing different activities, 6 numbered buttons and a name.</p>
+
+                <h3>Finding the activity average age</h3>
+                <p>Each activity has an average lower and upper age boundary. Use the lower boundary if the battery count modulo 10 is less than 4. 
+				Else, use the upper boundary. The activity ages are as follows:</p>
+				
+				<li>"Coding" - Lower 12, Upper 60</li>
+				<li>"Sleeping" - Lower 20, Upper 70</li>
+				<li>"Troublemaker" - Lower 5, Upper 18</li>
+				<li>"Eating" - Lower 9, Upper 13</li>
+				<li>"Playing" - Lower 2, Upper 16</li>
+				<li>"Cooking" - Lower 11, Upper 50</li>
+				<li>"Building" - Lower 3, Upper 45</li>
+				<li>"Drawing" - Lower 5, Upper 75</li>
+				<li>"Storymaking" - Lower 13, Upper 85</li>
+				<li>"Studying" - Lower 15, Upper 20</li>
+				<li>"Watching" - Lower 7, Upper 13</li>
+	            <li>"Praying" - Lower 18, Upper 100</li>
+	            <li>"Reading" - Lower 8, Upper 70</li>
+				<li>"Messaging" - Lower 14, Upper 50</li>
+				<li>"Boredom" - Lower 8, Upper 40</li>
+				<li>"Aiding" - Lower 10, Upper 60</li>
+				<li>"Teaching" - Lower 19, Upper 70</li>
+				<li>"Performing" - Lower 9, Upper 55</li>
+				<li>"Housework" - Lower 10, Upper 60</li>
+				<li>"Admiring" - Lower 13, Upper 90</li>
+				
+				<p>Now add the three activity ages together and modulo three. In other words, take the mean age of all of the ages.</p>
+				
+				<h3>Adding name age</h3>
+				
+				<p>Now add the extra number from the name as follows:</p>
+				
+				<li>Jake = +1</li>
+				<li>Emma = +2</li>
+				<li>Max = -1</li>
+				<li>Olivia = +3</li>
+				<li>Betty = -1</li>
+				<li>Musa = +5</li>
+				<li>Ryan = +1</li>
+				<li>Chris = NO CHANGE</li>
+				<li>Josie = -1</li>
+				<li>Kelly = +4</li>
+				
+				<h3>Which button to press</h3>
+				
+				<li>If av age is less than 10, press number 1.</li>
+				<li>If av age is between 10 and 20, press number 2.</li>
+				<li>If av age is between 21 and 30, press number 3.</li>
+				<li>If av age is between 31 and 50, press number 4.</li>
+				<li>If av age is between 51 and 75, press number 5.</li>
+				<li>If av age is more than 75, press number 6.</li>
+
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 1</div>
+        </div>
+    </div>
+</body>
+</html>
