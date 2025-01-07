@@ -122,7 +122,7 @@ public class SimpleModuleScript : MonoBehaviour
 				if (activityTexts [i].text == "Drawing") {activityages [i] = 75;}
 				if (activityTexts [i].text == "Storymaking") {activityages [i] = 85;}
 				if (activityTexts [i].text == "Studying") {activityages [i] = 20;}
-				if (activityTexts [i].text == "Watching") {activityages [i] = 30;}
+				if (activityTexts [i].text == "Watching") {activityages [i] = 13;}
 				if (activityTexts [i].text == "Praying") {activityages [i] = 100;}
 				if (activityTexts [i].text == "Reading") {activityages [i] = 70;}
 				if (activityTexts [i].text == "Messaging") {activityages [i] = 50;}
@@ -144,7 +144,6 @@ public class SimpleModuleScript : MonoBehaviour
 		if (nameText.text == "Betty") {age = age - 1;}
 		if (nameText.text == "Musa") {age = age + 5;}
 		if (nameText.text == "Ryan") {age = age + 1;}
-		if (nameText.text == "Chris") {age = age;}
 		if (nameText.text == "Josie") {age = age - 1;}
 		if (nameText.text == "Kelly") {age = age + 4;}
 
